@@ -1,9 +1,11 @@
 """
-Breakout (Lab Starter)
+Breakout Lab - Completed Version
 
-Run with:  python3 main.py
+Run with: python main.py
 
-Controls: Left/Right arrows to move the paddle.
+Controls:
+- Left/Right arrows: move paddle
+- R: restart after game over or winning
 """
 
 import pygame
@@ -21,6 +23,7 @@ def main():
 
     engine = GameEngine()
     running = True
+
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
